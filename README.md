@@ -18,39 +18,39 @@ When you create a table, the rows should be in the exact order as in the csv - t
 You can exit the program at any time by typing exit as your query
 
 # Example of Execution (submit each query one at a time):
-*make:plant_chemistry-ID,Date,TDS,ph
+\*make:plant_chemistry-ID,Date,TDS,ph
 
-*make:plant_climate-ID,Date,Temp,Humidity
+\*make:plant_climate-ID,Date,Temp,Humidity
 
-*make:house-rooms,beds,baths
+\*make:house-rooms,beds,baths
 
-*showTables:house,plant_chemistry,plant_climate
+\*showTables:house,plant_chemistry,plant_climate
 
-**addInto:plant_chemistry*csv:plant_chemistry.csv
+\*addInto:plant_chemistry*csv:plant_chemistry.csv
 
-*addInto:plant_climate*csv:plant_climate.csv
+\*addInto:plant_climate*csv:plant_climate.csv
 
-*addInto:plant_chemistry*values-1,8/4/23,500,7
+\*addInto:plant_chemistry*values-1,8/4/23,500,7
 
-*replace:plant_chemistry*set:tds=500,ph=7*filterBy:ph=6.8
+\*replace:plant_chemistry*set:tds=500,ph=7*filterBy:ph=6.8
 
-*remove:house
+\*remove:house
 
-*remove:tds*inTable:plant_chemistry
+\*remove:tds*inTable:plant_chemistry
 
-*remove:plant_chemistry*filterBy:ph=7
+\*remove:plant_chemistry*filterBy:ph=7
 
-*groupBy:ph*inTable:plant_chemistry
+\*groupBy:ph*inTable:plant_chemistry
 
-*groupBy:ph*inTable:plant_chemistry*aggregateBy:ID*function:cnt
+\*groupBy:ph*inTable:plant_chemistry*aggregateBy:ID*function:cnt
 
-*orderBy:plant_chemistry*column:ph
+\*orderBy:plant_chemistry*column:ph
 
-*connect:plant_chemistry,plant_climate*using:ID
+\*connect:plant_chemistry,plant_climate*using:ID
 
-*find:id,ph*inTable:plant_chemistry*orderby:ph
+\*find:id,ph*inTable:plant_chemistry*orderby:ph
 
-*find:id,ph*inTable:plant_chemistry*filterBy:ph<6.5*orderBy:ph
+\*find:id,ph*inTable:plant_chemistry*filterBy:ph<6.5*orderBy:ph
 
 exit
 
