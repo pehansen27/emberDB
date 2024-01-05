@@ -9,7 +9,7 @@ Should import .csv files you will be using into working directory
 To launch emberDB, execute the following: “python3 emberDB.py”
 
 # Assumptions:
-*make assumes there is a header included in csv and skips the first line
+\*make assumes there is a header included in csv and skips the first line
 
 Each table needs to be created (*make) before inserting data into that table
 
