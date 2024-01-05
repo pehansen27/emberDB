@@ -1,5 +1,5 @@
 # emberDB
-This is a rudimentary noSQL style database that I created from scratch in python.
+This is a rudimentary noSQL style database that I created from scratch in python. Run the program in the command line.
 
 # Before Launching Ember DB:
 Remove all existing .txt files in working directory (from previous program runs)
