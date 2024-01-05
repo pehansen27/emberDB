@@ -26,7 +26,7 @@ You can exit the program at any time by typing exit as your query
 
 *showTables:house,plant_chemistry,plant_climate
 
-*addInto:plant_chemistry*csv:plant_chemistry.csv
+**addInto:plant_chemistry*csv:plant_chemistry.csv
 
 *addInto:plant_climate*csv:plant_climate.csv
 
